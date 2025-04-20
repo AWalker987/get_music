@@ -8,12 +8,12 @@
   },
   "enable_conversion": {
     "description": "启用NCM等专有格式转换功能",
-    "type": "boolean",
+    "type": "bool",
     "default": true
   },
   "auto_install_deps": {
     "description": "自动安装所需依赖",
-    "type": "boolean",
+    "type": "bool",
     "default": true
   }
 }

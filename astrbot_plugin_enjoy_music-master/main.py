@@ -7,6 +7,7 @@ import os
 import json
 import requests
 import shutil
+import sys
 
 # 用于跟踪每个用户的状态
 USER_STATES: Dict[int, Dict[str, any]] = {}
@@ -129,6 +130,7 @@ class QQMusicPlugin(Star):
             yield event.plain_result(f"处理搜索结果时出错：{e}")
     
     async def download_and_play_song(self, event: AstrMessageEvent, song_info):
+
         """下载并播放歌曲，支持格式转换"""
         title = song_info.get("title", "未知歌曲")
         author = song_info.get("author", "未知歌手")
@@ -232,6 +234,8 @@ class QQMusicPlugin(Star):
         except Exception as e:
             print(f"NCM转换出错: {e}")
             return False
+        
+
     
     @llm_tool(name="play_song")
     async def llm_play_song(self, event: AstrMessageEvent, song_name: str, platform: str = "qq"):
