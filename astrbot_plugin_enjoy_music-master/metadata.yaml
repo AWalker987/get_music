@@ -1,6 +1,0 @@
-name: astrbot_plugin_qq_music # 插件的唯一识别名
-desc: 一个简单的QQ群点歌插件，支持多平台点歌 # 插件简短描述
-help: 发送"点歌：歌曲名称"即可点歌，也可以指定平台如"点歌：qq 歌曲名称" # 插件的帮助信息
-version: v1.0.0 # 插件版本号
-author: AWalker987 # 作者
-repo: https://github.com/AWalker987/astrbot_plugin_enjoy_music # 插件的仓库地址
